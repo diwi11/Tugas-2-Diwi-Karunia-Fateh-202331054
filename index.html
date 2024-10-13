@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Adopsi Kucing</title>
+    <link rel="icon" type="image/x-icon" href="image/iconkucing2.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <CENTER>
+    <h1>Formulir Adopsi Kucing</h1>
+    <form action="penutup.html">
+        <table>
+            <tr>
+                <td><label for="nama">Nama</label></td>
+                <td><input type="text" name="nama" id="nama" required autofocus></td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat </label></td>
+                <td><textarea name="alamat" id="alamat" cols="20" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="nomor">Nomor Telepon</label></td>
+                <td><input type="text" name="nomor" id="nomor" placeholder="Silahkan Masukan Nomor" pattern="[0-9]{12}" required title="Harus diisi 12 angka"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email" placeholder="Email"></td>
+            </tr>
+            <tr>
+                <td><label for="tanggaladopsi">Tanggal Adopsi</label></td>
+                <td><input type="date" name="tanggaladopsi" id="tanggaladopsi"></td>
+            </tr>
+            <tr>
+                <td><label for="jk">Jenis Kucing</label></td>
+                <td><select name="jk" id="jk">
+                    <option value="pilih jenis kucing">Pilih Jenis</option>
+                    <option value="anggora">Anggora</option>
+                    <option value="persia">Persia</option>
+                    <option value="scottishfold">Scottish Fold</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="tempattinggal">Apakah Anda tinggal di rumah atau apartemen?</label></td>
+                <td><input type="text" name="tempattinggal" id="tempattinggal"></td>
+            </tr>
+            <tr>
+                <td><label for="jumlah">Berapa kucing yang ingin dipelihara?</label></td>
+                <td><input type="number" name="jumlah" id="jumlah"></td>
+            </tr>
+            <tr>
+                <td><label for="at">Tambahan Vitamin</label></td>
+                <td><input type="radio" name="at" id="at" value="ya"> <label for="ya">Ya</label></td>
+                <td><input type="radio" name="at" id="at" value="tidak"> <label for="tidak">Tidak</label></td>
+            </tr>
+            <tr>
+                <td><label for="ck">Catatan Khusus</label></td>
+                <td><input type="text" name="ck" id="ck" ></td>
+            </tr>
+        </table>
+        <input type="submit" value="Simpan">
+    </form>
+</body>
+</html>
